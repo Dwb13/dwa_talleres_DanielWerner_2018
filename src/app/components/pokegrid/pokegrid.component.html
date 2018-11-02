@@ -1,0 +1,11 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-6" *ngFor="let pokemon of listPokemon;">
+        <div class="card my-2 border border-dark" >
+          <img src="../../../assets/img/{{ pokemon.name }}.png" alt="" class="card-img-top" (click)="specsPokemon(pokemon.number);">
+        </div>
+    </div>
+  </div>
+
+</div>

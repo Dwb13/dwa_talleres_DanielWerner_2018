@@ -1,0 +1,26 @@
+<section class="sectionCont"> 
+
+    <button class="btnGeneric" (click)="goToHome();">Go back to Home</button>    
+    <h2>List of users from JSONPlaceholder API:</h2>
+    <ul>
+        <li *ngFor="let usuario of listUsers;">
+            
+            <div class="row">
+                <div class="col-1">
+                    {{ usuario.id }}
+                </div>
+                <div class="col-2">
+                    {{ usuario.username }}
+                </div>
+                <div class="col-2">
+                    {{ usuario.name }}
+                </div>
+                <div class="col-2">
+                    {{ usuario.email }}
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br>
+
+</section>

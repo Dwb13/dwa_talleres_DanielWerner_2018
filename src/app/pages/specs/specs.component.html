@@ -1,0 +1,39 @@
+<div *ngIf="param">
+
+    <div class="container py-2">
+      <div class="leftCont imageAgumon">
+          <img class="imgDigimon" src="../../assets/img/{{ specs.name }}.png" alt="agumon">
+      </div>
+      <div class="row py-5">
+        <div class="col-6 mx-auto">
+          <div class="row pl-5">
+              <p>{{ specs.numbr }}</p>
+          </div>
+          <div class="row pl-5">
+              <p>{{ specs.level }}</p>
+          </div>
+          <div class="row pl-5">
+              <p>{{ specs.type }}</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row pr-1">
+              <p>{{ specs.ability }}</p>
+          </div>
+          <div class="row pr-1">
+              <p>{{ specs.nickname }}</p>
+          </div>
+          <div class="row pr-1">
+              <p>{{ specs.color }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div *ngIf="!param">
+
+
+</div>
+<div class="row text-center">
+  <a  class="btn btn-primary mx-auto" [routerLink] = "['/home']">Regresar</a >
+</div>

@@ -1,0 +1,11 @@
+/* Custom  local styles*/
+@import "styles/general/reset_estilos";
+@import "styles/general/normalize";
+@import "styles/general/fuentes";
+@import "styles/general/variables";
+
+/* vendor imported styles */
+@import "styles/vendor/slick";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "app/app.component.scss";
